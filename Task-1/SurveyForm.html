@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        A survey form
+    </title>
+    <link rel="stylesheet" type="text/css" href="surveyForm.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>SURVEY FORM</h1>
+    </div>
+
+    <div class="surveyform" id="surveyform">
+        <table class="tab">
+
+            <tr>
+                <td class="ques">
+                    <label class="q">* Name:</label>
+                </td>
+                <td class="ans">
+                    <input class="text" type="text" name="name" id="name" placeholder="Enter your name"><br>
+                    <span id="nam"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="ques">
+                    <label class="q">* Email:</label>
+                </td>
+                <td class="ans">
+                    <input class="text" type="text" name="name" id="mail" placeholder="Enter your Email"><br>
+                    <span id="msg"></span>
+                </td>
+            </tr>
+            <tr>
+                <td class="ques">
+                    <label class="q">* Age:</label>
+                </td>
+                <td class="ans">
+                    <input type="number" name="age" value="age" placeholder="age" max="122">
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="ques">
+                    Which option best describes your current role?
+                </td>
+                <td class="ans">
+                    <SELECT class="dropdown">
+                        <option selected="Student">Student</option>
+                        <option>Undergraduate</option>
+                        <option>Postgraduate</option>
+                    </SELECT>
+                </td>
+            </tr>
+            <tr>
+                <td class="ques ques5">
+                    * How likely is that you would recommend <br>our website to a friend?
+                </td>
+                <td class="ans">
+                    <input class="radio" type="radio" name="chances" value="Definitely"> Definitely<br>
+                    <input class="radio" type="radio" name="chances" value="Maybe">Maybe<br>
+                    <input class="radio" type="radio" name="chances" value="Not sure">Not Sure<br>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="ques ques7">
+                    Things that should be improved in the future<br>(Check all that apply)
+                </td>
+                <td class="ans">
+                    <input class="checkbox" type="checkbox" name="Front-end Projects"
+                        value="Front-end Projects">Front-end Projects<br>
+                    <input class="checkbox" type="checkbox" name="Back-end Projects" value="Back-end Projects">Back-end
+                    Projects<br>
+                    <input class="checkbox" type="checkbox" name="Data Visualisation" value="Data Visualisation">Data
+                    Visualisation<br>
+                </td>
+            </tr>
+
+        </table>
+        <button type="submit" class="submit" value="submit"> Submit Survey </button>
+    </div>
+    </form>
+
+</body>
+
+</html>
